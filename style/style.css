@@ -1,0 +1,863 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../grey-gradient-background.jpg);
+    background-size: cover;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    background-image: url(../ddd87bcbcdb1f4043a8470de39aaf98e.png);
+    background-size: cover;
+    position: absolute;
+    left: 650px;
+    top: 360px;
+    z-index: -1;
+}
+
+.redBlock, .whiteBlock, .greenBlock, .yellowBlock{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 627px;
+    top: 335px;
+}
+
+.redBlock {
+    background-color: aqua;
+    animation: mover 15s linear 1;
+    animation-delay: 10s;
+    z-index: -2;
+}
+.whiteBlock {
+    background-color: fuchsia;
+    animation: move 15s linear 1;
+    z-index: -3;
+}
+.greenBlock {
+    background-color: orange;
+    animation: move1 15s linear 1;
+    z-index: -4;
+}
+.yellowBlock {
+    background-color: lawngreen;
+    animation: move2 15s linear 1;
+    z-index: -5;
+}
+
+
+.redBlock:hover, .whiteBlock:hover, .greenBlock:hover, .yellowBLock:hover{
+    animation-play-state: paused;
+}
+
+@keyframes mover {
+    0% {
+        left: 627px;
+        top: 335px;
+    }
+    25% {
+        left: 637px;
+        top: 320px;
+    }
+    50% {
+        left: 620px;
+        top: 325px;
+    }
+    75% {
+        left: 625px;
+        top: 345px;
+    }
+    95% {
+        left: 632px;
+        top: 327px;
+    }
+    100% {
+        left: 633px;
+        top: 330px;
+    }
+}
+@keyframes move {
+    0% {
+        left: 627px;
+        top: 335px;
+    }
+    25% {
+        left: 633px;
+        top: 330px;
+    }
+    50% {
+        left: 625px;
+        top: 345px;
+    }
+    75% {
+        left: 620px;
+        top: 325px;
+    }
+    95% {
+        left: 632px;
+        top: 327px;
+    }
+    100% {
+        left: 637px;
+        top: 320px;
+    }
+}
+@keyframes move1 {
+    0% {
+        left: 627px;
+        top: 335px;
+    }
+    25% {
+        left: 640px;
+        top: 327px;
+    }
+    50% {
+        left: 615px;
+        top: 335px;
+    }
+    75% {
+        left: 627px;
+        top: 328px;
+    }
+    95% {
+        left: 632px;
+        top: 327px;
+    }
+    100% {
+        left: 626px;
+        top: 333px;
+    }
+}
+@keyframes move2 {
+    0% {
+        left: 627px;
+        top: 335px;
+    }
+    25% {
+        left: 623px;
+        top: 332px;
+    }
+    50% {
+        left: 628px;
+        top: 339px;
+    }
+    75% {
+        left: 624px;
+        top: 315px;
+    }
+    95% {
+        left: 632px;
+        top: 327px;
+    }
+    100% {
+        left: 637px;
+        top: 320px;
+    }
+}
+
+.flower1, .flower2, .flower3, .flower4, .flower5, .flower6, .flower7, .flower8, .flower9, .flower10 {
+    width: 290px;
+    height: 50px;
+    background-color: lime;
+    border-radius: 90px 20px 90px 20px;
+    position: absolute;
+    left: 560px;
+    top: 385px;
+    z-index: -6;
+}
+.flower1:hover, .flower2:hover, .flower3:hover, .flower4:hover, .flower5:hover, .flower6:hover, .flower7:hover, .flower8:hover, .flower9:hover, .flower10:hover{
+    animation-play-state: paused;
+}
+
+.flower1{
+    background-color: lime;
+    animation: flower1 10s linear infinite;
+    z-index: -6;
+}
+
+@keyframes flower1 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.flower2 {
+    background-color: antiquewhite;
+    animation: flower2 10s linear infinite;
+    z-index: -7;
+}
+
+@keyframes flower2 {
+    0% {
+        transform: rotate(-324deg);
+    }
+    100% {
+        transform: rotate(36deg);
+    }
+}
+
+.flower3 {
+    background-color: darkorange;
+    animation: flower3 10s linear infinite;
+    z-index: -8;
+}
+
+@keyframes flower3 {
+    0% {
+        transform: rotate(288deg);
+    }
+    100% {
+        transform: rotate(-72deg);
+    }
+}
+
+.flower4 {
+    background-color: fuchsia;
+    animation: flower4 10s linear infinite;
+    z-index: -9;
+}
+
+@keyframes flower4 {
+    0% {
+        transform: rotate(-252deg);
+    }
+    100% {
+        transform: rotate(108deg);
+    }
+}
+
+.flower5 {
+    background-color: gold;
+    animation: flower5 10s linear infinite;
+    z-index: -10;
+}
+
+@keyframes flower5 {
+    0% {
+        transform: rotate(216deg);
+    }
+    100% {
+        transform: rotate(-144deg);
+    }
+}
+
+.flower6 {
+    background-color: coral;
+    animation: flower6 10s linear infinite;
+    z-index: -11;
+}
+
+@keyframes flower6 {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.flower7 {
+    background-color: darkred;
+    animation: flower7 10s linear infinite;
+    z-index: -12;
+}
+
+@keyframes flower7 {
+    0% {
+        transform: rotate(144deg);
+    }
+    100% {
+        transform: rotate(-216deg);
+    }
+}
+
+.flower8 {
+    background-color: olive;
+    animation: flower8 10s linear infinite;
+    z-index: -13;
+}
+
+@keyframes flower8 {
+    0% {
+        transform: rotate(-108deg);
+    }
+    100% {
+        transform: rotate(252deg);
+    }
+}
+
+.flower9 {
+    background-color: seagreen;
+    animation: flower9 10s linear infinite;
+    z-index: -14;
+}
+
+@keyframes flower9 {
+    0% {
+        transform: rotate(72deg);
+    }
+    100% {
+        transform: rotate(-288deg);
+    }
+}
+
+.flower10 {
+    background-color: orange;
+    animation: flower10 10s linear infinite;
+    z-index: -15;
+}
+
+@keyframes flower10 {
+    0% {
+        transform: rotate(-36deg);
+    }
+    100% {
+        transform: rotate(324deg);
+    }
+}
+
+.animationPhp {
+    position: absolute;
+    top: 170px;
+    left: 200px;
+}
+
+.pulsePhp {
+    width: 90px;
+    height: 90px;
+    color: #FFF;
+    text-align: center;
+    background: blue;
+    border-radius: 50%;
+    position: relative;
+}
+
+.iconPhp {
+    opacity: 0;
+    position: absolute;
+    font-size: 60px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    line-height: 94px;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+
+.textPhp {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    top: 25px;
+    left: 10px;
+    font-size: 35px;
+    animation: text 9s ease-in-out infinite;
+    transition: .5s ease-in-out;
+}
+
+.textPhp p {
+    transition: .5s ease-in-out;
+}
+
+.pulsePhp:hover p {
+    transition: .5s ease-in-out;
+    transform: scale(0);
+}
+
+.pulsePhp:hover .iconPhp {
+    transform: scaleX(1);
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+
+.pulsePhp::before {
+    content: '';
+    position: absolute;
+    border: 60px solid blue;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulse 1.8s linear infinite;
+}
+
+.pulsePhp:hover::before,
+.pulsePhp:hover::after {
+    animation: pulse .8s linear infinite;
+}
+
+.pulsePhp::after {
+    animation-delay: .5s;
+}
+
+.pulsePhp:hover::after {
+    animation-delay: .5s;
+}
+
+@keyframes text {
+    0%,
+    {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.animationJava {
+    position: absolute;
+    top: 170px;
+    left: 1100px;
+}
+
+.pulseJava {
+    width: 90px;
+    height: 90px;
+    color: #fff;
+    text-align: center;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.iconJava {
+    position: absolute;
+    font-size: 80px;
+    color: red;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    animation: java 5s ease-in-out infinite;
+}
+
+.textJava {
+    opacity: 0;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    top: 28px;
+    left: 9px;
+    color: red;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+
+.iconJava i {
+    transition: .5s ease-in-out;
+}
+
+.pulseJava:hover i {
+    transition: .5s ease-in-out;
+    transform: scale(0);
+}
+
+.pulseJava:hover .textJava {
+    transform: scaleX(1);
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes java {
+    0%,
+    100% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes pulseJava {
+    0%,
+    100% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.pulseJava::before,
+.pulseJava::after {
+    content: '';
+    position: absolute;
+    border: 1.4px solid red;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulseJava 2s linear infinite;
+    opacity: 0;
+}
+
+.pulseJava:hover::before,
+.pulseJava:hover::after {
+    content: '';
+    position: absolute;
+    border: 1.4px solid red;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulseJava .8s linear infinite;
+}
+
+.pulseJava::after {
+    animation-delay: .5s;
+}
+
+.pulseJava:hover::after {
+    animation-delay: 0.5s;
+}
+
+.animationJavascript {
+    position: absolute;
+    top: 600px;
+    left: 1100px;
+}
+
+.pulseJavascript {
+    width: 90px;
+    height: 90px;
+    color: yellow;
+    text-align: center;
+    background: grey;
+    border-radius: 5px;
+}
+
+.iconJavascript {
+    position: relative;
+    font-size: 70px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    line-height: 97px;
+    animation: Javascript 2.9s ease-in-out infinite;
+}
+
+.textJavascript {
+    opacity: 0;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    top: 21px;
+    font-size: 20px;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+
+.iconJavascript i {
+    transition: .5s;
+}
+
+.pulseJavascript:hover i {
+    transition: .5s ease-in-out;
+    transform: scale(0);
+}
+
+.pulseJavascript:hover .textJavascript {
+    transform: scaleX(1);
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+
+.pulseJavascript::before {
+    content: '';
+    position: absolute;
+    border: 2px dotted yellow;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 5px;
+    animation: pulseJavascript 1.5s linear infinite;
+}
+
+@keyframes Javascript {
+    0% {
+        transform: scale(0.3) rotate(180deg);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: rotate(-180deg) scale(0.3);
+    }
+}
+
+@keyframes pulseJavascript {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 1
+    }
+}
+
+.animationPython {
+    position: absolute;
+    top: 600px;
+    left: 200px;
+}
+
+.pulsePython {
+    width: 90px;
+    height: 90px;
+    color: blue;
+    text-align: center;
+    background: yellow;
+    border-radius: 50%;
+    position: relative;
+}
+
+.iconPython {
+    position: absolute;
+    font-size: 70px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    line-height: 94px;
+    animation: python 2.5s ease-in-out infinite;
+}
+
+.textPython {
+    opacity: 0;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    top: 33px;
+    font-size: 18px;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+
+.iconPython i {
+    transition: .5s;
+}
+
+.pulsePython:hover i {
+    transition: .5s ease-in-out;
+    transform: scale(0);
+}
+
+.pulsePython:hover .textPython {
+    transform: scaleX(1);
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+
+.pulsePython::before,
+.pulsePython::after {
+    content: '';
+    position: absolute;
+    border: 6px double blue;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 100px 100px 0 0;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    animation: pulsePython 1.8s linear infinite;
+}
+
+.pulsePython::after {
+    animation-delay: .5s;
+}
+
+@keyframes python {
+    0% {
+        top: -10px;
+        z-index: -1;
+    }
+    20% {
+        top: -80px;
+    }
+    40% {
+        top: 0px;
+    }
+    65% {
+        z-index: 1
+    }
+    55% {
+        top: -25px;
+    }
+    70% {
+        top: 0px;
+    }
+    85% {
+        top: -10px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes pulsePython {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+
+
+.oval{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+   animation: oval 30s linear infinite;*/
+}
+
+.oval::before,
+.oval::after {
+    content: '';
+    position: absolute;
+    border: 8px solid grey;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    border-bottom: none;
+    border-top: none;
+    border-left: none ;
+/*    animation: pulsePython 1.8s linear infinite;*/
+}
+.oval:hover::before,
+.oval:hover::after {
+    animation: pulsePython 1.8s linear infinite;
+}
+.oval:hover::after{
+    animation-delay: .5s
+}
+
+@keyframes oval{
+    0%{
+        top: 50px;
+        left: 50px;
+        background-color: blue;
+    }
+    2%{
+        transform: rotate(0deg);
+    }
+    23%{
+        transform: rotate(0deg);
+    }
+    25%{
+        top: 50px;
+        left: 1250px;
+        background-color: white;
+        
+    }
+    27%{
+        transform: rotate(90deg);
+    }
+    48%{
+        transform: rotate(90deg);
+    }
+    50%{
+        top: 750px;
+        left: 1250px;
+        background-color: yellow;
+    }
+    52%{
+        transform: rotate(180deg);
+    }
+    73%{
+        transform: rotate(180deg);
+    }
+    75%{
+        top: 750px;
+        left: 50px;
+        background-color: blue;
+    }
+    77%{
+        transform: rotate(270deg);
+    }
+    98%{
+        transform: rotate(270deg);
+    }
+    100%{
+        top: 50px;
+        left: 50px;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
